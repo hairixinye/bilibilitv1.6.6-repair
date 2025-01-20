@@ -1,6 +1,8 @@
 # bilibilitv1.6.6-repair
 > ！！！⚠警告：bilibili已于2025年1月9日修改大会员协议，**同一账号同一时间最多可在2个终端设备使用会员服务**，本软件大会员相关模块未经测试，请谨慎使用！！！
 
+[<img src="https://api.gitsponsors.com/api/badge/img?id=640466426" height="20">](https://api.gitsponsors.com/api/badge/link?p=hUgDDi4K1xFa+v+blA2fzbEOaYn1dVJdVUEbLUuaQFGpxnszWfW391gGuQ+GyM3Yr23BcmQcBtDrgdueCJaskxacoSjcgKQVI762iEq3uQusKMkIzh0/cUN2KZDyJlx5mKltnWky/7xqYWf4Tn1riw==)
+
 还是bilibilitv1.6.6的界面舒服，缝缝补补继续用
 
 ## 版本
