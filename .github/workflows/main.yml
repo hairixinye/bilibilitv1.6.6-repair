@@ -11,10 +11,10 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v4
 
     - name: 设置 Java 环境
-      uses: actions/setup-java@v2
+      uses: actions/setup-java@v4
       with:
         distribution: 'adopt'
         java-version: '11' 
@@ -32,7 +32,7 @@ jobs:
 
     # 将构建产物保存为工件，方便下载
     - name: 保存构建产物
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: app-build
         # 修改路径，指向生成的 mybv.apk 文件
@@ -45,7 +45,7 @@ jobs:
     
     steps:
     - name: 下载构建产物
-      uses: actions/download-artifact@v3
+      uses: actions/download-artifact@v4
       with:
         name: app-build
 
