@@ -41,6 +41,20 @@ case "$1" in
         apktool b -c --use-aapt2 mybv
         #签名apk
         signapk platform.x509.pem platform.pk8 ./mybv/dist/mybv.apk mybv.apk
+        cat <<EOF > update.json
+{
+    "apkMd5":"$(md5sum mybv.apk|awk '{print $1}')",
+    "apkUrl":"https://github.com/qidian55/bilibilitv1.6.6-repair/raw/refs/heads/main/mybv.apk",
+    "fileSize":$(stat -c %s mybv.apk),
+    "id":"",
+    "newFeature":"",
+    "publishTime":0,
+    "title":"New",
+    "upgradeType":1,
+    "versionCode":1606,
+    "versionName":"1.6.6.$(date '+%Y%m%d')"
+}
+EOF
         exit 0
     ;;
 esac
